@@ -1,0 +1,10 @@
+Options -MultiViews
+RewriteEngine on
+
+# change /public to the public directory path.
+RewriteBase /public 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?req=$1
