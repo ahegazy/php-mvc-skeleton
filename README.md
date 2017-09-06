@@ -20,9 +20,9 @@ It's a normal MVC application so it consists of models/views/controllers
 2. Then a new app instance is created and the url is parsed in the [App.php](app/core/App.php) class
 3. The requested language is set and the requested controller is loaded ex: [home.php](app/controllers/home.php) controller.
 4. A controller class instance is created and the requested method called
-5. The method calls the model method and in the model loading method we check for login [Controller model](core/Controller.php)
+5. The method calls the model method and in the model loading method we check for login [Controller model](app/core/Controller.php)
     - If the user is loggedin it'll get the requested model, else it'll redirect to login
-6. The controller method then calls the view method and in the view loading method we load the language files and the page layout.  [Controller view](core/Controller.php)
+6. The controller method then calls the view method and in the view loading method we load the language files and the page layout.  [Controller view](app/core/Controller.php)
 
 ## Directory structure
 1. [app](app): Application backend
