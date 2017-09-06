@@ -17,12 +17,12 @@ Basic php skeleton of an MVC (model-view-controller) web application that you ca
 It's a normal MVC application so it consists of models/views/controllers 
 1. First it runs the initiation script [init.php](app/init.php)
     - The initiation script loads main scripts and confinguration files.
-2. Then a new app instance is created and the url is parsed in the [App.php](app/core/App.php) class
-3. The requested language is set and the requested controller is loaded ex: [home.php](app/controllers/home.php) controller.
+2. Then a new app instance is created and the url is parsed in the [App.php](app/core/App.php#L51) class
+3. In [App.php](app/core/App.php#L13) class the requested language is set and the requested controller is loaded ex: [home.php](app/controllers/home.php) controller.
 4. A controller class instance is created and the requested method called
-5. The method calls the model method and in the model loading method we check for login [Controller model](app/core/Controller.php)
+5. The method calls the model method and in the model loading method we check for login [Controller model](app/core/Controller.php#L10)
     - If the user is loggedin it'll get the requested model, else it'll redirect to login
-6. The controller method then calls the view method and in the view loading method we load the language files and the page layout.  [Controller view](app/core/Controller.php)
+6. The controller method then calls the view method and in the view loading method we load the language files and the page layout.  [Controller view](app/core/Controller.php#L37)
 
 ## Directory structure
 1. [app](app): Application backend
