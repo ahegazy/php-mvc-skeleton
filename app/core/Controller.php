@@ -44,13 +44,15 @@ class Controller{
         */
         if(!isset($data['lang']['main'])){
             require_once("../app/languages/" . LANGUAGE . "/main.php");
-            $data['lang']['main'] = LANGUAGE;
+            /* $lang is an array that is defined in the language file. */
+            $data['lang']['main'] = $lang;
          }
  
         $data['view'] = $view;
         if(!isset($data['lang'][$view])){
            require_once("../app/languages/" . LANGUAGE . "/". $view .".php");
-           $data['lang'][$view] = LANGUAGE;
+            /* $lang is an array that is defined in the language file. */
+            $data['lang'][$view] = $lang;
         }
 
         //including the header, the view and the footer    
