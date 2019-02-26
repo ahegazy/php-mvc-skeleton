@@ -22,10 +22,10 @@ class App{
         
         //setting the langauge to default language if not specified.
 
-        if(file_exists('../app/languages/' . $req[0])){
+        if($req != NULL && file_exists('../app/languages/' . $req[0])){
             define('LANGUAGE', array_shift($req));                    
         }else{
-            define('LANGUAGE', $language);
+            define('LANGUAGE', $this->language);
         }
 
         if(file_exists('../app/controllers/' . $req[0] . '.php')){
