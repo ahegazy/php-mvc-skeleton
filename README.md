@@ -47,5 +47,5 @@ It's a normal MVC application so it consists of models/views/controllers
 
 
 ## Finally 
-Hope it'll be beneficial i'll be pleased to see contribution and error fixes in this repo 
-if you have any question or request contact me: Ahmad Hegazy <ahegazipro@gmail.com>
+I'll be pleased to see contribution send a pull request, 
+if you have any questio you can open an issue.
